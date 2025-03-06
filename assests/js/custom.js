@@ -1,7 +1,7 @@
 $('.first_slider').slick({
     dots: true,
     arrows: true,
-    infinite: false,
+    infinite: true,
     speed: 300,
     slidesToShow: 2,
     slidesToScroll: 1,
@@ -9,7 +9,7 @@ $('.first_slider').slick({
       nextArrow:"<button type='button' class='next slick-next'><img src='../assests/imgs/arrowfirst.svg'></button>",
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1025,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
@@ -18,13 +18,13 @@ $('.first_slider').slick({
         }
       },
       {
-        breakpoint: 991,
+        breakpoint: 992,
         settings: {
-          slidesToShow: 1.1,
-          slidesToScroll: 1
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
         }
       },
-      
     ]
   });
   $('.second_slider').slick({
@@ -40,7 +40,7 @@ $('.first_slider').slick({
       nextArrow:"<button type='button' class='next slick-next'><img src='../assests/imgs/arrowfirst.svg'></button>",
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1025,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
@@ -49,10 +49,11 @@ $('.first_slider').slick({
         }
       },
       {
-        breakpoint: 767,
+        breakpoint: 768,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToScroll: 1,
+           dots: false,
         }
       },
 
@@ -77,7 +78,7 @@ $('.first_slider').slick({
         }
       },
       {
-        breakpoint: 1199,
+        breakpoint: 1200,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
@@ -85,7 +86,7 @@ $('.first_slider').slick({
         }
       },
       {
-        breakpoint: 1024,
+        breakpoint: 1025,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
@@ -93,13 +94,19 @@ $('.first_slider').slick({
         }
       },
       {
-        breakpoint: 991,
+        breakpoint: 992,
         settings: {
-          slidesToShow: 1.1,
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
           slidesToScroll: 1
         }
       },
-      
     ]
   });
   $('.fourth_slider').slick({
@@ -114,7 +121,7 @@ $('.first_slider').slick({
     nextArrow:"<button type='button' class='next slick-next'><img src='../assests/imgs/arrowfirst.svg'></button>",
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1025,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
